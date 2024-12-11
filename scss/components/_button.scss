@@ -1,0 +1,29 @@
+.outline-orange-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 6px 16px;
+  border: 1px solid #fd8806;
+  color: #fd8806;
+  transition: all 0.2s linear;
+  border-radius: 4px;
+  &:hover {
+    background: #fd8806;
+    color: #fff;
+  }
+}
+
+.orange-btn {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 12px 32px;
+  border-radius: 6px;
+  background: #fd8806;
+  color: #fff;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: #ff9c1a;
+  }
+}
