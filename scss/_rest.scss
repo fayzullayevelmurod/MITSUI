@@ -34,8 +34,30 @@ button {
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #0e0e0e;
+  font-size: 16px;
+  font-weight: 400;
 }
 .container {
   max-width: 1290px !important;
   margin: 0 auto;
+}
+
+.breadcrumb {
+  margin: 0;
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+    &.active {
+      color: #828282;
+    }
+  }
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
 }

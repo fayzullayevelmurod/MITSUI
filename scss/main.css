@@ -39,11 +39,33 @@ button {
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #0e0e0e;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .container {
   max-width: 1290px !important;
   margin: 0 auto;
+}
+
+.breadcrumb {
+  margin: 0;
+}
+.breadcrumb a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #333333;
+}
+.breadcrumb a.active {
+  color: #828282;
+}
+
+.title-text {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
 }
 
 .header .navbar-nav {
@@ -117,4 +139,43 @@ body {
 }
 .header-bottom__link:hover {
   color: #828282;
+}
+
+.home-page .breadcrumb {
+  margin: 24px 0 4px 0;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.filter-section .filter-categories__label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 115px;
+  margin-top: 6px;
+}
+.filter-section .filter-items {
+  display: flex;
+  gap: 6px;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.filter-section .filter-item {
+  line-height: 24px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background: #f3f3f3;
+  transition: all 0.2s linear;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.filter-section .filter-item:hover {
+  background: #dfdfdf;
+}
+.filter-section .filter-item.active {
+  background: #fd8806;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
