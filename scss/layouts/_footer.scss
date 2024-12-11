@@ -25,6 +25,10 @@
     line-height: 21px;
     color: #fff;
     white-space: nowrap;
+    transition: all 0.2s linear;
+    &:hover {
+      color: #828282;
+    }
   }
   .right-box {
     text-align: center;
