@@ -998,6 +998,42 @@ body {
   margin-left: auto;
 }
 
+.characteristics-page .counter-box {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 12px;
+}
+.characteristics-page .counter,
+.characteristics-page .outline-orange-btn {
+  width: 100%;
+}
+.characteristics-page .outline-orange-btn {
+  border-radius: 6px;
+}
+.characteristics-page .counter {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 8px 40px;
+}
+.characteristics-page .counter button {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.characteristics-page .counter .count {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  text-align: center;
+}
+
 .outline-orange-btn {
   font-size: 16px;
   font-weight: 500;
@@ -1492,5 +1528,18 @@ body {
   }
   .breadcrumb-item + .breadcrumb-item::before {
     padding-right: 1px;
+  }
+  .characteristics-page .counter-box {
+    display: none;
+  }
+  .characteristics-page .counter {
+    padding: 8px 27px;
+  }
+  .characteristics-page .counter .count {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .characteristics-page .outline-orange-btn {
+    min-width: 165px;
   }
 }/*# sourceMappingURL=main.css.map */

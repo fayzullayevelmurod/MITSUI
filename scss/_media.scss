@@ -484,4 +484,17 @@
   .breadcrumb-item + .breadcrumb-item::before {
     padding-right: 1px;
   }
+  .characteristics-page .counter-box {
+    display: none;
+  }
+  .characteristics-page .counter {
+    padding: 8px 27px;
+  }
+  .characteristics-page .counter .count {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .characteristics-page .outline-orange-btn {
+    min-width: 165px;
+  }
 }

@@ -166,6 +166,33 @@ window.addEventListener('DOMContentLoaded', () => {
   galleryThumbs.on('transitionStart', function () {
     galleryMain.slideTo(galleryThumbs.activeIndex);
   });
+  try {
+    document.querySelectorAll('.counter-box').forEach(counterBox => {
+      // Counter elementlarini tanlash
+      const countDisplay = counterBox.querySelector('.count'); // Hozirgi qiymatni ko'rsatuvchi element
+      const incrementBtn = counterBox.querySelector('.inc'); // Qo'shish tugmasi
+      const decrementBtn = counterBox.querySelector('.dec'); // Ayirish tugmasi
+
+      // Boshlang'ich qiymatni o'qish
+      let count = parseInt(countDisplay.textContent, 10);
+
+      // Qo'shish funksiyasi
+      incrementBtn.addEventListener('click', () => {
+        count++;
+        countDisplay.textContent = count; // Yangi qiymatni chiqarish
+      });
+
+      // Ayirish funksiyasi
+      decrementBtn.addEventListener('click', () => {
+        if (count > 1) { // Qiymat 1 dan kam bo'lmasligi uchun
+          count--;
+          countDisplay.textContent = count; // Yangi qiymatni chiqarish
+        }
+      });
+    });
+  } catch (error) {
+
+  }
 })
 
 
