@@ -67,6 +67,40 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  try {
+    // Elementlarni tanlash
+    const selectFilter = document.querySelector('.select-filter');
+    const selectedText = selectFilter.querySelector('.select-text');
+    const filterOptions = selectFilter.querySelector('.filter-scrollbox');
+    const filterItems = filterOptions.querySelectorAll('.filter-item span');
+    const openFilterBtn = document.querySelector('.selected-filter');
+
+    // Filterni ochish va yopish
+    openFilterBtn.addEventListener('click', () => {
+      const isOpen = filterOptions.classList.toggle('show'); // "show" klassini qo'shish yoki olib tashlash
+      openFilterBtn.classList.toggle('active', isOpen); // "active" klassini boshqarish
+    });
+
+    // Tanlangan elementni o‘zgartirish
+    filterItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        selectedText.textContent = item.textContent; // Tanlangan filter matnini o‘zgartirish
+        filterOptions.classList.remove('show'); // Filterni yopish
+        openFilterBtn.classList.remove('active'); // "active" klassini olib tashlash
+      });
+    });
+
+    // Sahifadagi boshqa joyni bosganda filterni yopish
+    document.addEventListener('click', (e) => {
+      if (!selectFilter.contains(e.target)) {
+        filterOptions.classList.remove('show'); // Filterni yopish
+        openFilterBtn.classList.remove('active'); // "active" klassini olib tashlash
+      }
+    });
+  } catch (error) {
+    console.log(error);
+  }
 })
 
 

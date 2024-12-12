@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #14ae5c;
+}
+::-webkit-scrollbar-track {
+  background: #bdbdbd;
+  border-radius: 3px;
+}
 h1,
 h2,
 h3,
