@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- fonts -->
+  <!-- swiper link -->
+  <link rel="stylesheet" href="libs/swiper-bundle.min.css">
+  <link rel="stylesheet" href="fonts/Roboto/stylesheet.css">
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- css link -->
+  <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<body>
+
+  <div class="overflow-hidden characteristics-page waiting-product__page">
+
+    <!-- header -->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#!">
+            <img src="images/logo.svg" alt="logo">
+          </a>
+          <div class="header-right__btns">
+            <a class="header-media__cart" href="#!">
+              <img src="images/icons/shopping_cart.svg" alt="" width="21" height="21">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <img src="images/icons/menu.svg" alt="">
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="w-100">
+              <div class="d-lg-none d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="#!">
+                  <img src="images/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <svg width="16" height="16" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.8 10.75L0.75 9.7L4.95 5.5L0.75 1.3L1.8 0.25L6 4.45L10.2 0.25L11.25 1.3L7.05 5.5L11.25 9.7L10.2 10.75L6 6.55L1.8 10.75Z"
+                      fill="#333333" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="navbar-nav">
+                <li>
+                  <a class="header-link" href="#!">Газовые генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Бензиновые генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Инверторные генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Сварочные генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Монтаж и сервис</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ms-auto social-media__boxes">
+              <div class="social-media">
+                <div class="d-flex align-items-center justify-content-end">
+                  <img src="images/icons/WhatsApp.svg" alt="WhatsApp">
+                  <a href="#!" class="logo-name">WhatsApp</a>
+                </div>
+                <a class="logo-link" href="#!">Открыть</a>
+              </div>
+              <div class="social-media">
+                <div class="d-flex align-items-center justify-content-end">
+                  <div class="logo">
+                    <img src="images/icons/call.svg" alt="call">
+                  </div>
+                  <a class="logo-name" href="tel:+74951353835">+7 495 135-38-35</a>
+                </div>
+                <a class="logo-link" href="#!">Обратный звонок</a>
+              </div>
+              <a class="orange-btn w-100 d-lg-none" href="#!">Обратный звонок</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="header-bottom__list">
+            <li class="header-bottom__item">
+              <a href="#!" class="header-bottom__link">Газовые генераторы</a>
+            </li>
+            <li class="header-bottom__item">
+              <a href="#!" class="header-bottom__link">Бензиновые генераторы</a>
+            </li>
+            <li class="header-bottom__item">
+              <a href="#!" class="header-bottom__link">Инверторные генераторы</a>
+            </li>
+            <li class="header-bottom__item">
+              <a href="#!" class="header-bottom__link">Сварочные генераторы</a>
+            </li>
+            <li class="header-bottom__item">
+              <a href="#!" class="header-bottom__link">Монтаж и сервис</a>
+            </li>
+            <li class="header-bottom__item">
+              <a href="#!" class="header-bottom__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <main>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">MITSUI-RUSSIA.RU</a></li>
+            <li class="breadcrumb-item"><a href="index.html">Газовые генераторы Mitsui</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Газовые генераторы Mitsui</li>
+          </ol>
+        </nav>
+      </div>
+
+
+      <div class="container">
+
+        <!-- product characteristics -->
+        <div class="product-characteristics">
+          <div class="slider-sec">
+            <div class="swiper-container gallery-thumbs">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="images/swiper-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/swiper-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/swiper-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/swiper-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-box">
+                    <img class="play-icon" src="images/icons/play_circle.svg" alt="">
+                    <img src="images/swiper-product.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container gallery-main">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="swiper-product__img" src="images/big-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-product__img" src="images/big-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-product__img" src="images/big-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-product__img" src="images/big-product.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-product__img" src="images/big-product.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="character-sec">
+            <div class="badges d-flex gap-2">
+              <div class="badge-box orange-badge">2.3 кВт</div>
+              <div class="badge-box orange-badge">220 В</div>
+            </div>
+            <div class="top-box">
+              <h2 class="product-title">Mitsui Power Eco ZM 7000 SE в кожухе</h2>
+              <div class="status-box">
+                <div class="img-box">
+                  <img src="images/icons/close.svg" alt="" width="18" height="18">
+                </div>
+                <span class="danger-text">Товар в ожидании, уточняйте</span>
+              </div>
+            </div>
+            <div class="character-box">
+              <h3 class="character-box__title">Характеристики</h3>
+              <ul>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+                <li>
+                  <span>Мощность</span>
+                  <div class="line"></div>
+                  <span>2.3 кВт</span>
+                </li>
+              </ul>
+              <button class="show-more__character">Все характеристики</button>
+            </div>
+          </div>
+          <div class="product-cart">
+            <div class="product-cart__header">
+              <div class="status-box">
+                <div class="img-box">
+                  <img src="images/icons/close.svg" alt="" width="18" height="18">
+                </div>
+                <span class="danger-text">Товар в ожидании, уточняйте</span>
+              </div>
+              <h3 class="product-price">98 800 ₽</h3>
+            </div>
+            <button class="orange-btn w-100">Добавить в корзину</button>
+            <div class="additional-options">
+              <h3 class="additional-options__title">Дополнительные опции</h3>
+              <div class="product-boxes">
+                <div class="product-box">
+                  <input class="form-check-input mt-0" type="checkbox" value="" id="check-1">
+                  <label class="form-check-label d-flex align-items-center" for="check-1">
+                    <img class="product-img" src="images/product-2.png" alt="">
+                    <div>
+                      <h5 class="product-info">Блок АВР 65А универсальный</h5>
+                      <h4 class="price">59 800 ₽</h4>
+                    </div>
+                  </label>
+                </div>
+                <div class="product-box">
+                  <input class="form-check-input mt-0" type="checkbox" value="" id="check-2">
+                  <label class="form-check-label d-flex align-items-center" for="check-2">
+                    <img class="product-img" src="images/product-3.png" alt="">
+                    <div>
+                      <h5 class="product-info">Блок АВР 65А универсальный</h5>
+                      <h4 class="price">59 800 ₽</h4>
+                    </div>
+                  </label>
+                </div>
+                <div class="product-box">
+                  <input class="form-check-input mt-0" type="checkbox" value="" id="check-3" checked>
+                  <label class="form-check-label d-flex align-items-center" for="check-3">
+                    <img class="product-img" src="images/product-2.png" alt="">
+                    <div>
+                      <h5 class="product-info">Блок АВР 65А универсальный</h5>
+                      <h4 class="price">59 800 ₽</h4>
+                    </div>
+                  </label>
+                </div>
+                <div class="product-box">
+                  <input class="form-check-input mt-0" type="checkbox" value="" id="check-4">
+                  <label class="form-check-label d-flex align-items-center" for="check-4">
+                    <img class="product-img" src="images/product-3.png" alt="">
+                    <div>
+                      <h5 class="product-info">Блок АВР 65А универсальный</h5>
+                      <h4 class="price">59 800 ₽</h4>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="bottom-box">
+                <span class="bottom-box__text">Итого за комплект:</span>
+                <h4 class="total-price">108 600 ₽</h4>
+              </div>
+              <a class="orange-btn d-md-none d-block w-100" href="#!">Добавить в корзину</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- tabs -->
+        <div class="tabs">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true">Описание</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <span class="d-md-block d-none">Характеристики</span>
+                <span class="d-md-none d-block">Хар-ки</span>
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Документация</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+              tabindex="0">
+              <p class="desc">
+                Lorem ipsum dolor sit amet consectetur. Proin aliquam ultrices pellentesque hac volutpat sem. Porttitor
+                praesent purus ullamcorper ultrices elit odio aliquet venenatis non. Netus viverra nisi sed et. Auctor
+                duis metus arcu nec ut congue dictum nec. Imperdiet nascetur at etiam amet proin. Tristique pulvinar
+                mauris ullamcorper est venenatis. Viverra egestas massa orci amet nunc. Commodo egestas cursus
+                ullamcorper odio dignissim. Aliquam magna a pellentesque nunc. Habitant faucibus rhoncus gravida odio
+                non vitae viverra. Vitae sapien fringilla semper nec sit morbi. Duis viverra molestie egestas egestas.
+                Volutpat cursus id porta lorem tristique id. Gravida pellentesque vulputate dui et.
+              </p>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+              tabindex="0">
+              <div class="character-cards">
+                <div class="character-boxes">
+                  <div class="character-box">
+                    <h3 class="character-box__title">Двигатель</h3>
+                    <ul>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="character-box">
+                    <h3 class="character-box__title">Генератор переменного тока</h3>
+                    <ul>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="horizon-line"></div>
+                <div class="character-boxes">
+                  <div class="character-box">
+                    <h3 class="character-box__title">Габаритные размеры, вес</h3>
+                    <ul>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="character-box">
+                    <h3 class="character-box__title">Дополнительно</h3>
+                    <ul>
+                      <li>
+                        <span>Счетчик моточасов</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="character-box">
+                    <h3 class="character-box__title">Конструктивные особенности</h3>
+                    <ul>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                      <li>
+                        <span>Мощность</span>
+                        <div class="line"></div>
+                        <span>2.3&nbsp;кВт</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+              tabindex="0">
+              <div class="documents">
+                <a class="document" href="#!">
+                  <img src="images/icons/draft.svg" alt="draft">
+                  <span>Название документации</span>
+                </a>
+                <a class="document" href="#!">
+                  <img src="images/icons/draft.svg" alt="draft">
+                  <span>Название документации</span>
+                </a>
+                <a class="document" href="#!">
+                  <img src="images/icons/draft.svg" alt="draft">
+                  <span>Название документации</span>
+                </a>
+                <a class="document" href="#!">
+                  <img src="images/icons/draft.svg" alt="draft">
+                  <span>Название документации</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tabs -->
+
+        <!-- contact -->
+        <div class="contact">
+          <div class="left-side">
+            <h2 class="contact-title">Заказать предмонтажный выезд инженера на объект</h2>
+            <form class="contact-form">
+              <div class="contact-form__box">
+                <input class="contact-input" type="tel" id="name-input">
+                <label class="contact-form__label" for="name-input">Введите имя <span>*</span></label>
+              </div>
+              <div class="contact-form__box">
+                <input class="contact-input" type="tel" id="phone-mask">
+                <label class="contact-form__label" for="phone-mask">Введите телефон <span>*</span></label>
+              </div>
+              <button class="orange-btn">Заказать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="#!">
+            <img src="images/logo.svg" alt="logo" width="109" height="47">
+          </a>
+          <ul class="footer-list">
+            <li>
+              <a href="#!" class="footer-link">Газовые генераторы</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link">Бензиновые генераторы</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link">Инверторные генераторы</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link">Сварочные генераторы</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link">Монтаж и сервис</a>
+            </li>
+            <li>
+              <a href="#!" class="footer-link">Контакты</a>
+            </li>
+          </ul>
+          <div class="right-box">
+            <a class="tel" href="tel:+74951353835">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.95 18C14.8667 18 12.8083 17.5458 10.775 16.6375C8.74167 15.7292 6.89167 14.4417 5.225 12.775C3.55833 11.1083 2.27083 9.25833 1.3625 7.225C0.454167 5.19167 0 3.13333 0 1.05C0 0.75 0.1 0.5 0.3 0.3C0.5 0.1 0.75 0 1.05 0H5.1C5.33333 0 5.54167 0.0791667 5.725 0.2375C5.90833 0.395833 6.01667 0.583333 6.05 0.8L6.7 4.3C6.73333 4.56667 6.725 4.79167 6.675 4.975C6.625 5.15833 6.53333 5.31667 6.4 5.45L3.975 7.9C4.30833 8.51667 4.70417 9.1125 5.1625 9.6875C5.62083 10.2625 6.125 10.8167 6.675 11.35C7.19167 11.8667 7.73333 12.3458 8.3 12.7875C8.86667 13.2292 9.46667 13.6333 10.1 14L12.45 11.65C12.6 11.5 12.7958 11.3875 13.0375 11.3125C13.2792 11.2375 13.5167 11.2167 13.75 11.25L17.2 11.95C17.4333 12.0167 17.625 12.1375 17.775 12.3125C17.925 12.4875 18 12.6833 18 12.9V16.95C18 17.25 17.9 17.5 17.7 17.7C17.5 17.9 17.25 18 16.95 18Z"
+                  fill="#fff" />
+              </svg>
+              <span>+7 495 135-38-35</span>
+            </a>
+            <a class="call-back" href="tel:+74951353835">Обратный звонок</a>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-bottom">
+          <span>Все права защищены © 2011–2024 mitsui-russia.ru</span>
+          <span>Политика конфиденциальности</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- Imask -->
+  <script src="https://unpkg.com/imask"></script>
+  <!-- swiper js -->
+  <script src="libs/swiper-bundle.min.js"></script>
+  <!-- JS file -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -152,6 +152,12 @@
       &.success-text {
         color: #34c759;
       }
+      &.danger-text {
+        color: #db371f;
+      }
+      &.warning-text {
+        color: #fd8806;
+      }
     }
   }
   .product-cart {
@@ -222,6 +228,19 @@
       line-height: 41.6px;
     }
   }
+  .status-boxes {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 24px;
+  }
+  .status-box__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+    padding-left: 35px;
+    display: block;
+    margin-top: 8px;
+  }
 }
 
 .tabs {
@@ -272,5 +291,20 @@
       text-decoration: underline;
       color: #333333;
     }
+  }
+}
+
+.waiting-product__page {
+  .product-characteristics .product-cart__header {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+  .product-price {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 41.6px;
+    text-align: right;
+    margin-left: auto;
   }
 }
