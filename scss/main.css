@@ -1034,6 +1034,10 @@ body {
   text-align: center;
 }
 
+.product-characteristics .swiper-pagination {
+  display: none;
+}
+
 .outline-orange-btn {
   font-size: 16px;
   font-weight: 500;
