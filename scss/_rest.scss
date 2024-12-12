@@ -146,3 +146,14 @@ body {
   margin-bottom: 0;
   border-bottom: 1px solid #dddddd;
 }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: #dddddd;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  margin: 6px;
+}
+.swiper-pagination-bullet-active {
+  background: #fd8806 !important;
+}
