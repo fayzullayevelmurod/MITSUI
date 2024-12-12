@@ -1,20 +1,24 @@
 window.addEventListener('load', () => {
-  const cookie = document.querySelector('.cookie'); // Cookie banner
-  const closeCookie = document.querySelector('.close-cookie__btn'); // Yopish tugmasi
+  try {
+    const cookie = document.querySelector('.cookie'); // Cookie banner
+    const closeCookie = document.querySelector('.close-cookie__btn'); // Yopish tugmasi
 
-  // LocalStorage'dan "cookieAccepted" qiymatini o‘qib tekshiramiz
-  const isCookieAccepted = localStorage.getItem('cookieAccepted');
+    // LocalStorage'dan "cookieAccepted" qiymatini o‘qib tekshiramiz
+    const isCookieAccepted = localStorage.getItem('cookieAccepted');
 
-  // Agar localStorage'da cookieAccepted mavjud bo‘lmasa, banner ko‘rinadi
-  if (!isCookieAccepted || isCookieAccepted !== 'true') {
-    cookie.classList.add('show'); // Cookie bannerni ko‘rsatish
+    // Agar localStorage'da cookieAccepted mavjud bo‘lmasa, banner ko‘rinadi
+    if (!isCookieAccepted || isCookieAccepted !== 'true') {
+      cookie.classList.add('show'); // Cookie bannerni ko‘rsatish
+    }
+
+    // Yopish tugmasi bosilganda
+    closeCookie.addEventListener('click', () => {
+      cookie.classList.remove('show'); // Cookie bannerni yashirish
+      localStorage.setItem('cookieAccepted', 'true'); // LocalStorage'ga qiymat saqlash
+    });
+  } catch (error) {
+
   }
-
-  // Yopish tugmasi bosilganda
-  closeCookie.addEventListener('click', () => {
-    cookie.classList.remove('show'); // Cookie bannerni yashirish
-    localStorage.setItem('cookieAccepted', 'true'); // LocalStorage'ga qiymat saqlash
-  });
 });
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -90,36 +94,74 @@ window.addEventListener('DOMContentLoaded', () => {
   try {
     // Elementlarni tanlash
     const selectFilter = document.querySelector('.select-filter');
-    const selectedText = selectFilter.querySelector('.select-text');
-    const filterOptions = selectFilter.querySelector('.filter-scrollbox');
-    const filterItems = filterOptions.querySelectorAll('.filter-item span');
-    const openFilterBtn = document.querySelector('.selected-filter');
+    if (selectFilter) {
+      const selectedText = selectFilter.querySelector('.select-text');
+      const filterOptions = selectFilter.querySelector('.filter-scrollbox');
+      const filterItems = filterOptions.querySelectorAll('.filter-item span');
+      const openFilterBtn = document.querySelector('.selected-filter');
 
-    // Filterni ochish va yopish
-    openFilterBtn.addEventListener('click', () => {
-      const isOpen = filterOptions.classList.toggle('show'); // "show" klassini qo'shish yoki olib tashlash
-      openFilterBtn.classList.toggle('active', isOpen); // "active" klassini boshqarish
-    });
-
-    // Tanlangan elementni o‘zgartirish
-    filterItems.forEach((item) => {
-      item.addEventListener('click', () => {
-        selectedText.textContent = item.textContent; // Tanlangan filter matnini o‘zgartirish
-        filterOptions.classList.remove('show'); // Filterni yopish
-        openFilterBtn.classList.remove('active'); // "active" klassini olib tashlash
+      // Filterni ochish va yopish
+      openFilterBtn.addEventListener('click', () => {
+        const isOpen = filterOptions.classList.toggle('show'); // "show" klassini qo'shish yoki olib tashlash
+        openFilterBtn.classList.toggle('active', isOpen); // "active" klassini boshqarish
       });
-    });
 
-    // Sahifadagi boshqa joyni bosganda filterni yopish
-    document.addEventListener('click', (e) => {
-      if (!selectFilter.contains(e.target)) {
-        filterOptions.classList.remove('show'); // Filterni yopish
-        openFilterBtn.classList.remove('active'); // "active" klassini olib tashlash
-      }
-    });
+      // Tanlangan elementni o‘zgartirish
+      filterItems.forEach((item) => {
+        item.addEventListener('click', () => {
+          selectedText.textContent = item.textContent; // Tanlangan filter matnini o‘zgartirish
+          filterOptions.classList.remove('show'); // Filterni yopish
+          openFilterBtn.classList.remove('active'); // "active" klassini olib tashlash
+        });
+      });
+
+      // Sahifadagi boshqa joyni bosganda filterni yopish
+      document.addEventListener('click', (e) => {
+        if (!selectFilter.contains(e.target)) {
+          filterOptions.classList.remove('show'); // Filterni yopish
+          openFilterBtn.classList.remove('active'); // "active" klassini olib tashlash
+        }
+      });
+    }
   } catch (error) {
     console.log(error);
   }
+
+  var galleryThumbs = new Swiper(".gallery-thumbs", {
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    slidesPerView: 3,
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+  });
+
+  var galleryMain = new Swiper(".gallery-main", {
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    preventInteractionOnTransition: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+
+  galleryMain.on('slideChangeTransitionStart', function () {
+    galleryThumbs.slideTo(galleryMain.activeIndex);
+  });
+
+  galleryThumbs.on('transitionStart', function () {
+    galleryMain.slideTo(galleryThumbs.activeIndex);
+  });
 })
 
 
