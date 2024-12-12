@@ -1,5 +1,24 @@
+window.addEventListener('load', () => {
+  const cookie = document.querySelector('.cookie'); // Cookie banner
+  const closeCookie = document.querySelector('.close-cookie__btn'); // Yopish tugmasi
+
+  // LocalStorage'dan "cookieAccepted" qiymatini o‘qib tekshiramiz
+  const isCookieAccepted = localStorage.getItem('cookieAccepted');
+
+  // Agar localStorage'da cookieAccepted mavjud bo‘lmasa, banner ko‘rinadi
+  if (!isCookieAccepted || isCookieAccepted !== 'true') {
+    cookie.classList.add('show'); // Cookie bannerni ko‘rsatish
+  }
+
+  // Yopish tugmasi bosilganda
+  closeCookie.addEventListener('click', () => {
+    cookie.classList.remove('show'); // Cookie bannerni yashirish
+    localStorage.setItem('cookieAccepted', 'true'); // LocalStorage'ga qiymat saqlash
+  });
+});
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
+
 
   // product views;
   const listView = document.querySelector('.list-view');

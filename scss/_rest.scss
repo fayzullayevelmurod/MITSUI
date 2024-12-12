@@ -57,6 +57,12 @@ body {
 
 .breadcrumb {
   margin: 0;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   a {
     font-size: 16px;
     font-weight: 400;

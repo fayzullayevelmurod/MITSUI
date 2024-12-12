@@ -66,6 +66,12 @@ body {
 
 .breadcrumb {
   margin: 0;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.breadcrumb::-webkit-scrollbar {
+  display: none;
 }
 .breadcrumb a {
   font-size: 16px;
@@ -313,6 +319,31 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #828282;
+}
+
+.cookie {
+  position: fixed;
+  bottom: 24px;
+  padding: 24px 32px;
+  align-items: center;
+  gap: 64px;
+  background: #fff;
+  box-shadow: 0px 4px 45.4px 0px rgba(0, 0, 0, 0.2);
+  max-width: 1290px;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+.cookie.show {
+  display: flex;
+}
+.cookie p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .home-page .breadcrumb {
@@ -1208,5 +1239,16 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 12px;
+  }
+  .characteristics-page .breadcrumb {
+    margin: 8px -15px 8px 0;
+  }
+  .cookie.show {
+    flex-direction: column;
+    align-items: start;
+    gap: 12px;
+  }
+  .cookie .orange-btn {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
