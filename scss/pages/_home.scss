@@ -186,6 +186,7 @@
       grid-template-columns: 1fr;
       row-gap: 12px;
       .product-card {
+        position: relative;
         padding: 0 0 12px 0;
         border: none;
         border-radius: 0;

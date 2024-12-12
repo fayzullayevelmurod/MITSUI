@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   .navbar-nav {
     flex-direction: column;
     gap: 20px;
@@ -59,6 +60,11 @@
       display: flex;
       gap: 10px;
       justify-content: space-between;
+      overflow-x: auto;
+      overflow-y: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
     &__link {
       font-size: 18px;
@@ -66,9 +72,22 @@
       line-height: 27px;
       color: #fff;
       transition: all 0.2s linear;
+      white-space: nowrap;
       &:hover {
         color: #828282;
       }
     }
+  }
+  &-media__cart {
+    display: none;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+  }
+  &-right__btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
 }

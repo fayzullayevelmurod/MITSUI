@@ -10,6 +10,9 @@
   &:hover {
     background: #fd8806;
     color: #fff;
+    svg path {
+      fill: #fff;
+    }
   }
 }
 
@@ -22,6 +25,7 @@
   background: #fd8806;
   color: #fff;
   transition: all 0.2s linear;
+  text-align: center;
 
   &:hover {
     background: #ff9c1a;

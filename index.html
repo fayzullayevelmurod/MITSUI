@@ -25,32 +25,53 @@
           <a class="navbar-brand" href="#!">
             <img src="images/logo.svg" alt="logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="header-right__btns">
+            <a class="header-media__cart" href="#!">
+              <img src="images/icons/shopping_cart.svg" alt="" width="21" height="21">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <img src="images/icons/menu.svg" alt="">
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li>
-                <a class="header-link" href="#!">Газовые генераторы</a>
-              </li>
-              <li>
-                <a class="header-link" href="#!">Бензиновые генераторы</a>
-              </li>
-              <li>
-                <a class="header-link" href="#!">Инверторные генераторы</a>
-              </li>
-              <li>
-                <a class="header-link" href="#!">Сварочные генераторы</a>
-              </li>
-              <li>
-                <a class="header-link" href="#!">Монтаж и сервис</a>
-              </li>
-              <li>
-                <a class="header-link" href="#!">Контакты</a>
-              </li>
-            </ul>
+            <div class="w-100">
+              <div class="d-lg-none d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="#!">
+                  <img src="images/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <svg width="16" height="16" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.8 10.75L0.75 9.7L4.95 5.5L0.75 1.3L1.8 0.25L6 4.45L10.2 0.25L11.25 1.3L7.05 5.5L11.25 9.7L10.2 10.75L6 6.55L1.8 10.75Z"
+                      fill="#333333" />
+                  </svg>
+                </button>
+              </div>
+              <ul class="navbar-nav">
+                <li>
+                  <a class="header-link" href="#!">Газовые генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Бензиновые генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Инверторные генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Сварочные генераторы</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Монтаж и сервис</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#!">Контакты</a>
+                </li>
+              </ul>
+            </div>
             <div class="ms-auto social-media__boxes">
               <div class="social-media">
                 <div class="d-flex align-items-center justify-content-end">
@@ -68,10 +89,7 @@
                 </div>
                 <a class="logo-link" href="#!">Обратный звонок</a>
               </div>
-              <a class="header-cart" href="#!">
-                <img src="images/icons/shopping_cart.svg" alt="">
-                <span>Корзина</span>
-              </a>
+              <a class="orange-btn w-100 d-lg-none" href="#!">Обратный звонок</a>
             </div>
           </div>
         </div>
@@ -117,7 +135,7 @@
         <!-- filter section -->
         <div class="filter-section">
           <h1 class="title-text">Бензиновые генераторы Mitsui</h1>
-          <div class="filter-categories d-flex gap-2">
+          <div class="filter-categories d-md-flex gap-2">
             <h4 class="filter-categories__label">Назначение</h4>
             <div class="filter-items">
               <div class="filter-item">Бытовой</div>
@@ -132,7 +150,7 @@
               <div class="filter-item">С блоком автозапуска (АВР)</div>
             </div>
           </div>
-          <div class="filter-categories d-flex gap-2">
+          <div class="filter-categories d-md-flex gap-2">
             <h4 class="filter-categories__label">Мощность, кВт</h4>
             <div class="filter-items">
               <div class="filter-item">1,2 кВт</div>
@@ -211,73 +229,27 @@
               <div class="product-card__right">
                 <div class="product-card__info">
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
                     <h5 class="info-text">1.2 кВт</h5>
                   </div>
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
                     <h5 class="info-text right">220 В</h5>
                   </div>
                 </div>
                 <div class="product-card__footer">
                   <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/close.svg" alt="">
-                    <span class="danger-text">Товар в ожидании, уточняйте</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/box.svg" alt="">
-                    <span class="warning-text">Товар изготавливается под заказ</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -295,186 +267,27 @@
               <div class="product-card__right">
                 <div class="product-card__info">
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
                     <h5 class="info-text">1.2 кВт</h5>
                   </div>
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
                     <h5 class="info-text right">220 В</h5>
                   </div>
                 </div>
                 <div class="product-card__footer">
                   <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/close.svg" alt="">
-                    <span class="danger-text">Товар в ожидании, уточняйте</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/box.svg" alt="">
-                    <span class="warning-text">Товар изготавливается под заказ</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/box.svg" alt="">
-                    <span class="warning-text">Товар изготавливается под заказ</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/check.svg" alt="">
-                    <span class="success-text">В наличии</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/close.svg" alt="">
-                    <span class="danger-text">Товар в ожидании, уточняйте</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-card__left">
-                <img class="product-card__img" src="images/product-1.png" alt="product img">
-                <div class="product-card__info-top">
-                  <div class="status-box">
-                    <img src="images/icons/box.svg" alt="">
-                    <span class="warning-text">Товар изготавливается под заказ</span>
-                  </div>
-                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
-                </div>
-              </div>
-              <div class="product-card__right">
-                <div class="product-card__info">
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
-                    <h5 class="info-text">1.2 кВт</h5>
-                  </div>
-                  <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
-                    <h5 class="info-text right">220 В</h5>
-                  </div>
-                </div>
-                <div class="product-card__footer">
-                  <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -492,17 +305,27 @@
               <div class="product-card__right">
                 <div class="product-card__info">
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
                     <h5 class="info-text">1.2 кВт</h5>
                   </div>
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
                     <h5 class="info-text right">220 В</h5>
                   </div>
                 </div>
                 <div class="product-card__footer">
                   <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -511,8 +334,8 @@
                 <img class="product-card__img" src="images/product-1.png" alt="product img">
                 <div class="product-card__info-top">
                   <div class="status-box">
-                    <img src="images/icons/close.svg" alt="">
-                    <span class="danger-text">Товар в ожидании, уточняйте</span>
+                    <img src="images/icons/check.svg" alt="">
+                    <span class="success-text">В наличии</span>
                   </div>
                   <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
                 </div>
@@ -520,17 +343,179 @@
               <div class="product-card__right">
                 <div class="product-card__info">
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Мощность</h4>
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
                     <h5 class="info-text">1.2 кВт</h5>
                   </div>
                   <div class="product-card__info-box">
-                    <h4 class="info-title">Напряжение</h4>
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
                     <h5 class="info-text right">220 В</h5>
                   </div>
                 </div>
                 <div class="product-card__footer">
                   <h3 class="product-price">979 000 ₽</h3>
-                  <a class="outline-orange-btn" href="#!">Подробнее</a>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-card__left">
+                <img class="product-card__img" src="images/product-1.png" alt="product img">
+                <div class="product-card__info-top">
+                  <div class="status-box">
+                    <img src="images/icons/check.svg" alt="">
+                    <span class="success-text">В наличии</span>
+                  </div>
+                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
+                </div>
+              </div>
+              <div class="product-card__right">
+                <div class="product-card__info">
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
+                    <h5 class="info-text">1.2 кВт</h5>
+                  </div>
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
+                    <h5 class="info-text right">220 В</h5>
+                  </div>
+                </div>
+                <div class="product-card__footer">
+                  <h3 class="product-price">979 000 ₽</h3>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-card__left">
+                <img class="product-card__img" src="images/product-1.png" alt="product img">
+                <div class="product-card__info-top">
+                  <div class="status-box">
+                    <img src="images/icons/check.svg" alt="">
+                    <span class="success-text">В наличии</span>
+                  </div>
+                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
+                </div>
+              </div>
+              <div class="product-card__right">
+                <div class="product-card__info">
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
+                    <h5 class="info-text">1.2 кВт</h5>
+                  </div>
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
+                    <h5 class="info-text right">220 В</h5>
+                  </div>
+                </div>
+                <div class="product-card__footer">
+                  <h3 class="product-price">979 000 ₽</h3>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-card__left">
+                <img class="product-card__img" src="images/product-1.png" alt="product img">
+                <div class="product-card__info-top">
+                  <div class="status-box">
+                    <img src="images/icons/check.svg" alt="">
+                    <span class="success-text">В наличии</span>
+                  </div>
+                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
+                </div>
+              </div>
+              <div class="product-card__right">
+                <div class="product-card__info">
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
+                    <h5 class="info-text">1.2 кВт</h5>
+                  </div>
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
+                    <h5 class="info-text right">220 В</h5>
+                  </div>
+                </div>
+                <div class="product-card__footer">
+                  <h3 class="product-price">979 000 ₽</h3>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-card__left">
+                <img class="product-card__img" src="images/product-1.png" alt="product img">
+                <div class="product-card__info-top">
+                  <div class="status-box">
+                    <img src="images/icons/check.svg" alt="">
+                    <span class="success-text">В наличии</span>
+                  </div>
+                  <h3 class="product-card__title">Mitsui Power Eco ZM 1500 IM</h3>
+                </div>
+              </div>
+              <div class="product-card__right">
+                <div class="product-card__info">
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block text-start">Мощность</h4>
+                    <h4 class="info-title d-md-none me-auto text-start">Мощ</h4>
+                    <h5 class="info-text">1.2 кВт</h5>
+                  </div>
+                  <div class="product-card__info-box">
+                    <h4 class="info-title d-none d-md-block">Напряжение</h4>
+                    <h4 class="info-title d-md-none">Напряж</h4>
+                    <h5 class="info-text right">220 В</h5>
+                  </div>
+                </div>
+                <div class="product-card__footer">
+                  <h3 class="product-price">979 000 ₽</h3>
+                  <button class="outline-orange-btn">
+                    <span class="d-md-block d-none">Подробнее</span>
+                    <svg class="d-md-none d-block" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.16634 7.49998V4.99998H6.66634V3.33331H9.16634V0.833313H10.833V3.33331H13.333V4.99998H10.833V7.49998H9.16634ZM5.83301 18.3333C5.37467 18.3333 4.98231 18.1701 4.65592 17.8437C4.32954 17.5173 4.16634 17.125 4.16634 16.6666C4.16634 16.2083 4.32954 15.816 4.65592 15.4896C4.98231 15.1632 5.37467 15 5.83301 15C6.29134 15 6.6837 15.1632 7.01009 15.4896C7.33648 15.816 7.49967 16.2083 7.49967 16.6666C7.49967 17.125 7.33648 17.5173 7.01009 17.8437C6.6837 18.1701 6.29134 18.3333 5.83301 18.3333ZM14.1663 18.3333C13.708 18.3333 13.3156 18.1701 12.9893 17.8437C12.6629 17.5173 12.4997 17.125 12.4997 16.6666C12.4997 16.2083 12.6629 15.816 12.9893 15.4896C13.3156 15.1632 13.708 15 14.1663 15C14.6247 15 15.017 15.1632 15.3434 15.4896C15.6698 15.816 15.833 16.2083 15.833 16.6666C15.833 17.125 15.6698 17.5173 15.3434 17.8437C15.017 18.1701 14.6247 18.3333 14.1663 18.3333ZM0.833008 3.33331V1.66665H3.56217L7.10384 9.16665H12.9372L16.1872 3.33331H18.083L14.4163 9.95831C14.2636 10.2361 14.0587 10.4514 13.8018 10.6041C13.5448 10.7569 13.2636 10.8333 12.958 10.8333H6.74967L5.83301 12.5H15.833V14.1666H5.83301C5.20801 14.1666 4.73231 13.8958 4.40592 13.3541C4.07954 12.8125 4.06912 12.2639 4.37467 11.7083L5.49967 9.66665L2.49967 3.33331H0.833008Z"
+                        fill="#FD8806" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
